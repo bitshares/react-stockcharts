@@ -1,7 +1,7 @@
 'use strict';
 
 import React from "react";
-
+import createReactClass from "create-react-class";
 import ContentSection from "lib/content-section";
 import Row from "lib/row";
 import Section from "lib/section";
@@ -9,7 +9,7 @@ import Section from "lib/section";
 import AreaChart from "lib/charts/AreaChart";
 import AreaChartWithYPercent from "lib/charts/AreaChartWithYPercent";
 
-var OverviewPage = React.createClass({
+var OverviewPage = createReactClass({
 	statics: {
 		title: 'Area Chart'
 	},

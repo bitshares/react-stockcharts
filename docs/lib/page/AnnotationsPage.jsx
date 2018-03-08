@@ -6,12 +6,13 @@ import { helper } from "react-stockcharts";
 import ContentSection from "lib/content-section";
 import Row from "lib/row";
 import Section from "lib/section";
+import createReactClass from "create-react-class";
 
 import CandleStickChartWithAnnotation from "lib/charts/CandleStickChartWithAnnotation";
 
 var { TypeChooser } = helper;
 
-var AnnotationsPage = React.createClass({
+var AnnotationsPage = createReactClass({
 	statics: {
 		title: "Annotations"
 	},

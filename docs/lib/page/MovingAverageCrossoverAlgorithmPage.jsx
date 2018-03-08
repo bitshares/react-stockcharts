@@ -6,12 +6,13 @@ import { helper } from "react-stockcharts";
 import ContentSection from "lib/content-section";
 import Row from "lib/row";
 import Section from "lib/section";
+import createReactClass from "create-react-class";
 
 import MovingAverageCrossOverAlgorithmV1 from "lib/charts/MovingAverageCrossOverAlgorithmV1";
 
 var { TypeChooser } = helper;
 
-var AnnotationsPage = React.createClass({
+var AnnotationsPage = createReactClass({
 	statics: {
 		title: "MA Crossover - Using text annotation"
 	},

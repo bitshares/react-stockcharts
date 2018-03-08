@@ -6,12 +6,13 @@ import { helper } from "react-stockcharts";
 import ContentSection from "lib/content-section";
 import Row from "lib/row";
 import Section from "lib/section";
+import createReactClass from "create-react-class";
 
 import CandleStickChartForContinuousIntraDay from "lib/charts/CandleStickChartForContinuousIntraDay";
 var { TypeChooser } = helper;
 
 
-var IntraDayContinuousDataPage = React.createClass({
+var IntraDayContinuousDataPage = createReactClass({
 	statics: {
 		title: "Intra day with Continuous scale"
 	},

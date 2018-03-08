@@ -2,6 +2,7 @@
 
 import React from "react";
 import { helper } from "react-stockcharts";
+import createReactClass from "create-react-class";
 
 import ContentSection from "lib/content-section";
 import Row from "lib/row";
@@ -11,7 +12,7 @@ var { TypeChooser } = helper;
 
 import HorizontalStackedBarChart from "lib/charts/HorizontalStackedBarChart";
 
-var HorizontalBarChartPage = React.createClass({
+var HorizontalBarChartPage = createReactClass({
 	statics: {
 		title: "Horizontal Stacked Bar"
 	},

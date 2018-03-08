@@ -4,8 +4,8 @@ import React from "react";
 import ContentSection from "lib/content-section";
 import Row from "lib/row";
 import Section from "lib/section";
-
-var BreakingChangesPage = React.createClass({
+import createReactClass from "create-react-class";
+var BreakingChangesPage = createReactClass({
 	statics: {
 		title: 'Change log'
 	},

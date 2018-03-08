@@ -6,13 +6,14 @@ import { helper } from "react-stockcharts";
 import ContentSection from "lib/content-section";
 import Row from "lib/row";
 import Section from "lib/section";
+import createReactClass from "create-react-class";
 
 import CandleStickChartWithBrush from "lib/charts/CandleStickChartWithBrush";
 
 var { TypeChooser } = helper;
 
 
-var BrushSupportPage = React.createClass({
+var BrushSupportPage = createReactClass({
 	statics: {
 		title: "Brush"
 	},

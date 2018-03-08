@@ -2,6 +2,7 @@
 
 import React from "react";
 import { helper } from "react-stockcharts";
+import createReactClass from "create-react-class";
 
 import ContentSection from "lib/content-section";
 import Row from "lib/row";
@@ -11,7 +12,7 @@ import AreaChartWithZoomPan from "lib/charts/AreaChartWithZoomPan";
 
 var { TypeChooser } = helper;
 
-var MiscChartsPage = React.createClass({
+var MiscChartsPage = createReactClass({
 	statics: {
 		title: 'Misc Charts'
 	},

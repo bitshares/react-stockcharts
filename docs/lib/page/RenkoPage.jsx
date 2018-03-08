@@ -2,6 +2,7 @@
 
 import React from "react";
 import { helper } from "react-stockcharts";
+import createReactClass from "create-react-class";
 
 import ContentSection from "lib/content-section";
 import Row from "lib/row";
@@ -11,7 +12,7 @@ import Renko from "lib/charts/Renko";
 
 var { TypeChooser } = helper;
 
-var RenkoPage = React.createClass({
+var RenkoPage = createReactClass({
 	statics: {
 		title: 'Renko'
 	},

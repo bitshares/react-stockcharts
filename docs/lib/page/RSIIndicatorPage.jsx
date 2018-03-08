@@ -6,12 +6,13 @@ import { helper } from "react-stockcharts";
 import ContentSection from "lib/content-section";
 import Row from "lib/row";
 import Section from "lib/section";
+import createReactClass from "create-react-class";
 
 import CandleStickChartWithRSIIndicator from "lib/charts/CandleStickChartWithRSIIndicator";
 
 var { TypeChooser } = helper;
 
-var RSIIndicatorPage = React.createClass({
+var RSIIndicatorPage = createReactClass({
 	statics: {
 		title: "RSI and ATR"
 	},

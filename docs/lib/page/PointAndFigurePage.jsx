@@ -2,6 +2,7 @@
 
 import React from "react";
 import { helper } from "react-stockcharts";
+import createReactClass from "create-react-class";
 
 import ContentSection from "lib/content-section";
 import Row from "lib/row";
@@ -11,7 +12,7 @@ import PointAndFigure from "lib/charts/PointAndFigure";
 
 var { TypeChooser } = helper;
 
-var PointAndFigurePage = React.createClass({
+var PointAndFigurePage = createReactClass({
 	statics: {
 		title: 'Point & Figure'
 	},

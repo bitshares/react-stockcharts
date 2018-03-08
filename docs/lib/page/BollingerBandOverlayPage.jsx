@@ -7,10 +7,11 @@ import ContentSection from "lib/content-section";
 import Row from "lib/row";
 import Section from "lib/section";
 import CandleStickChartWithBollingerBandOverlay from "lib/charts/CandleStickChartWithBollingerBandOverlay";
+import createReactClass from "create-react-class";
 
 var { TypeChooser } = helper;
 
-var BollingerBandOverlayPage = React.createClass({
+var BollingerBandOverlayPage = createReactClass({
 	statics: {
 		title: 'Bollinger Band'
 	},

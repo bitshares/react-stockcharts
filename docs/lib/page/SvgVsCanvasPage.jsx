@@ -1,6 +1,7 @@
 'use strict';
 
 import React from "react";
+import createReactClass from "create-react-class";
 import { helper } from "react-stockcharts";
 var { TypeChooser } = helper;
 
@@ -11,7 +12,7 @@ import Section from "lib/section";
 import CandleStickChartWithZoomPan from "lib/charts/CandleStickChartWithZoomPan";
 
 
-var SvgVsCanvasPage = React.createClass({
+var SvgVsCanvasPage = createReactClass({
 	statics: {
 		title: 'Svg vs Canvas'
 	},

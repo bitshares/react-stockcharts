@@ -1,6 +1,7 @@
 'use strict';
 
 import React from "react";
+import createReactClass from "create-react-class"; 
 import { helper } from "react-stockcharts";
 var { TypeChooser } = helper;
 
@@ -10,7 +11,7 @@ import Section from "lib/section";
 
 import LineAndScatterChart from "lib/charts/LineAndScatterChart";
 
-var LineAndScatterChartPage = React.createClass({
+var LineAndScatterChartPage = createReactClass({
 	statics: {
 		title: 'Line & Scatter'
 	},

@@ -33,6 +33,7 @@
     "sourcemap:visualize": "source-map-explorer build/dist/react-stockcharts.min.js build/dist/react-stockcharts.min.js.map"
   },
   "dependencies": {
+    "create-react-class": "^15.6.3",
     "d3-array": "^1.0.2",
     "d3-collection": "^1.0.2",
     "d3-force": "^1.0.4",
@@ -47,8 +48,8 @@
     "save-svg-as-png": "^1.0.3"
   },
   "peerDependencies": {
-    "react": "^15.0.0",
-    "react-dom": "^15.0.0"
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
   },
   "devDependencies": {
     "autoprefixer-loader": "^3.2.0",
@@ -80,8 +81,8 @@
     "node-sass": "^4.2.0",
     "prismjs": "^1.6.0",
     "progress-bar-webpack-plugin": "^1.9.2",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "remarkable-loader": "^0.2.1",
     "rimraf": "^2.5.4",
     "sass-loader": "^4.1.1",

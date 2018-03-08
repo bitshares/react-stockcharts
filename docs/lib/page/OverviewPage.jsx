@@ -1,12 +1,13 @@
 'use strict';
 
 import React from "react";
+import createReactClass from "create-react-class";
 
 import ContentSection from "lib/content-section";
 import Row from "lib/row";
 import Section from "lib/section";
 
-var OverviewPage = React.createClass({
+var OverviewPage = createReactClass({
 	statics: {
 		title: 'Overview'
 	},

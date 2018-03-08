@@ -6,12 +6,13 @@ import { helper } from "react-stockcharts";
 import ContentSection from "lib/content-section";
 import Row from "lib/row";
 import Section from "lib/section";
+import createReactClass from "create-react-class";
 
 import MovingAverageCrossOverAlgorithmV2 from "lib/charts/MovingAverageCrossOverAlgorithmV2";
 
 var { TypeChooser } = helper;
 
-var MovingAverageCrossoverAlgorithmPage2 = React.createClass({
+var MovingAverageCrossoverAlgorithmPage2 = createReactClass({
 	statics: {
 		title: "MA Crossover - Using svg shape"
 	},

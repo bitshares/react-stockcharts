@@ -6,7 +6,7 @@ import ContentSection from "lib/content-section";
 import Row from "lib/row";
 import Section from "lib/section";
 
-var QuickStartExamplesPage = React.createClass({
+var QuickStartExamplesPage = createReactClass({
 	statics: {
 		title: 'Quick start Examples'
 	},

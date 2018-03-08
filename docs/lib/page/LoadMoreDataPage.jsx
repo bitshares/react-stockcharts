@@ -6,12 +6,13 @@ import { helper } from "react-stockcharts";
 import ContentSection from "lib/content-section";
 import Row from "lib/row";
 import Section from "lib/section";
+import createReactClass from "create-react-class";
 
 import CandleStickChartPanToLoadMore from "lib/charts/CandleStickChartPanToLoadMore";
 var { TypeChooser } = helper;
 
 
-var LoadMoreDataPage = React.createClass({
+var LoadMoreDataPage = createReactClass({
 	statics: {
 		title: 'Load more data on pan'
 	},

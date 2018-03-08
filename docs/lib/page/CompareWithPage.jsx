@@ -6,12 +6,13 @@ import { helper } from "react-stockcharts";
 import ContentSection from "lib/content-section";
 import Row from "lib/row";
 import Section from "lib/section";
+import createReactClass from "create-react-class";
 
 var { TypeChooser } = helper;
 
 import CandleStickChartWithCompare from "lib/charts/CandleStickChartWithCompare";
 
-var CompareWithPage = React.createClass({
+var CompareWithPage = createReactClass({
 	statics: {
 		title: 'Compare'
 	},

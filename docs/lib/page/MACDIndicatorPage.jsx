@@ -6,12 +6,13 @@ import { helper } from "react-stockcharts";
 import ContentSection from "lib/content-section";
 import Row from "lib/row";
 import Section from "lib/section";
+import createReactClass from "create-react-class";
 
 import CandleStickChartWithMACDIndicator from "lib/charts/CandleStickChartWithMACDIndicator";
 
 var { TypeChooser } = helper;
 
-var MACDIndicatorPage = React.createClass({
+var MACDIndicatorPage = createReactClass({
 	statics: {
 		title: "MACD"
 	},

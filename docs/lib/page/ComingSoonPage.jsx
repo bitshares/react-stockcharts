@@ -4,8 +4,9 @@ import React from "react";
 import ContentSection from "lib/content-section";
 import Row from "lib/row";
 import Section from "lib/section";
+import createReactClass from "create-react-class";
 
-var ComingSoonPage = React.createClass({
+var ComingSoonPage = createReactClass({
 	statics: {
 		title: 'Coming soon'
 	},

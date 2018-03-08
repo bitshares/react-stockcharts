@@ -6,12 +6,13 @@ import { helper } from "react-stockcharts";
 import ContentSection from "lib/content-section";
 import Row from "lib/row";
 import Section from "lib/section";
+import createReactClass from "create-react-class";
 
 var { TypeChooser } = helper;
 
 import CandleStickChartWithFibonacciInteractiveIndicator from "lib/charts/CandleStickChartWithFibonacciInteractiveIndicator";
 
-var FibonacciInteractiveIndicatorPage = React.createClass({
+var FibonacciInteractiveIndicatorPage = createReactClass({
 	statics: {
 		title: "Fibonacci Retracement"
 	},

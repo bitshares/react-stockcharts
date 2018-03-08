@@ -6,12 +6,13 @@ import { helper } from "react-stockcharts";
 import ContentSection from "lib/content-section";
 import Row from "lib/row";
 import Section from "lib/section";
+import createReactClass from "create-react-class";
 
 import CandleStickChartWithClickHandlerCallback from "lib/charts/CandleStickChartWithClickHandlerCallback";
 
 var { TypeChooser } = helper;
 
-var ClickHandlerCallbackPage = React.createClass({
+var ClickHandlerCallbackPage = createReactClass({
 	statics: {
 		title: "Click callback"
 	},

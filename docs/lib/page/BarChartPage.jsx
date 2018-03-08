@@ -3,6 +3,7 @@
 import React from "react";
 import { helper } from "react-stockcharts";
 var { TypeChooser } = helper;
+import createReactClass from "create-react-class";
 
 import ContentSection from "lib/content-section";
 import Row from "lib/row";
@@ -10,7 +11,7 @@ import Section from "lib/section";
 
 import BarChart from "lib/charts/BarChart";
 
-var BarChartPage = React.createClass({
+var BarChartPage = createReactClass({
 	statics: {
 		title: "Bar Chart"
 	},

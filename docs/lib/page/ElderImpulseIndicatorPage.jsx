@@ -6,12 +6,13 @@ import { helper } from "react-stockcharts";
 import ContentSection from "lib/content-section";
 import Row from "lib/row";
 import Section from "lib/section";
+import createReactClass from "create-react-class";
 
 import OHLCChartWithElderImpulseIndicator from "lib/charts/OHLCChartWithElderImpulseIndicator";
 
 var { TypeChooser } = helper;
 
-var ElderImpulseIndicatorPage = React.createClass({
+var ElderImpulseIndicatorPage = createReactClass({
 	statics: {
 		title: "Elder Impulse"
 	},

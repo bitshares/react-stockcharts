@@ -4,12 +4,13 @@ import React from "react";
 import ContentSection from "lib/content-section";
 import Row from "lib/row";
 import Section from "lib/section";
+import createReactClass from "create-react-class";
 
 import CandleStickStockScaleChartWithVolumeBarV1 from "lib/charts/CandleStickStockScaleChartWithVolumeBarV1";
 import CandleStickStockScaleChartWithVolumeBarV2 from "lib/charts/CandleStickStockScaleChartWithVolumeBarV2";
 import CandleStickStockScaleChartWithVolumeBarV3 from "lib/charts/CandleStickStockScaleChartWithVolumeBarV3";
 
-var VolumeBarPage = React.createClass({
+var VolumeBarPage = createReactClass({
 	statics: {
 		title: 'Volume bar'
 	},

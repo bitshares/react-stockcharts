@@ -2,15 +2,15 @@ function getExternalAssets(mode) {
 	switch (mode) {
 	case "dev":
 	case "watch": {
-		return `<script src="react/dist/react.js"></script>
-		<script src="react-dom/dist/react-dom.js"></script>
+		return `<script src="//cdnjs.cloudflare.com/ajax/libs/react/16.2.0/umd/react.development.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/react-dom/16.2.0/umd/react-dom.development.js"></script>
 
 		<link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 		<link href="prismjs/themes/prism.css" rel="stylesheet">`;
 	}
 	default:
-		return `<script src="//cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.min.js"></script>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.min.js"></script>
+		return `<script src="//cdnjs.cloudflare.com/ajax/libs/react/16.2.0/umd/react.production.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/react-dom/16.2.0/umd/react-dom.production.min.js"></script>
 
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.css" rel="stylesheet">
@@ -86,8 +86,8 @@ module.exports = function(params) {
 		<meta name="description" content="Highly customizable stock charts">
 		<meta name="author" content="rrag">
 		<!--
-			http://www.favicon.cc/?action=icon&file_id=174180 
-			License: Creative Commons, no attribution 
+			http://www.favicon.cc/?action=icon&file_id=174180
+			License: Creative Commons, no attribution
 		-->
 		<link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAACAAIAACQAAAoODgAEAAQAAiQCAAwWCgAEJAQADggIAAQSHgAODhAAAA4AAAwIBAAmJCgAABQIACQkJAAmJCYAKCQoAAAcAAAEHAQABhwGAAgcCAAmJCQAACoAAAQGBAAGBgYAFgIAAAAMCAAKKgoABAYCAAA4AAAEFAQAAjgCAAQ4BAAAAhoAHAICABQUFAAAIgAACgwMAAwGBAAEDAQADg4AAA4GBgAGDAYADDAMACQiJAAmIiYAABoAAAoMCAAAPgAABBoEAAg+CAAABAAAAgQCAAAoAAAACggACigKAAwoDAAEBAIAABIAAAA2AAAKKAgAAAAaAAYgCAAaAAAAAA4cAAogDAASEhIABgoKACgoKAAAIAAAChIIAAQgBAAAAggAAgIKABISEAAENgAAAiAAAAAuAAAMBAQABAoEAAAQCAAKCgoAABgAAAoKCAACGAIAADwAAAIGHAAAAgAAAgICAAAmAAAEAgQAAiYCAAoKAgAANAAAChAKACYmJgAGCAoAAB4AAAAACAAADBoAAgAKAAYICAAoJiYACAgKAAgQBAAMAgQAAiwCAAgICAAADggACggKAAA6AgAMAgIABAgCAAIWAgAMEAQAAjoCAAgWCAAMCAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ0VgYGBgYGBgYGBgYGBFQ0UkbGxsbGxsbGxsbGwZJEUPREREREREaGFEREREZgNFZyNAQEBAQCkaQEBAQEAjFmAqT09PaidMXXNqDHNwCGAPJlJSUlJCbz8cbl84aApFYDUAAFgAPE5eJQA7HjRZDy5IclpiU2tIIV4BLzw2FBAuBTN0AjF1XzkgFVxGXiwRLgdWYgtGNAAAYhc2U1pVLS4TBRgEE1BbWzIfMihiK2AuTWlUVDBUVFQwRz12EgZFDQkiPj4+Ij4+Pj5kPkFXEGBlY2NJNw5RGxttY2NjSmBFSzo6OnEdcXFxcTo6OktFQ0VgYGBgYBAQEBBgYGBFQwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" rel="icon" type="image/x-icon" />
 		<title>React Stockcharts - Home</title>

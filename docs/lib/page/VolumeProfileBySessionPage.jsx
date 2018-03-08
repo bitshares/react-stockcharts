@@ -6,12 +6,13 @@ import { helper } from "react-stockcharts";
 import ContentSection from "lib/content-section";
 import Row from "lib/row";
 import Section from "lib/section";
+import createReactClass from "create-react-class";
 
 import VolumeProfileBySessionChart from "lib/charts/VolumeProfileBySessionChart";
 var { TypeChooser } = helper;
 
 
-var VolumeProfileBySessionPage = React.createClass({
+var VolumeProfileBySessionPage = createReactClass({
 	statics: {
 		title: "Volume profile by Session"
 	},

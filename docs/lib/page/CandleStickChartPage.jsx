@@ -4,11 +4,12 @@ import React from "react";
 import ContentSection from "lib/content-section";
 import Row from "lib/row";
 import Section from "lib/section";
+import createReactClass from "create-react-class";
 
 import CandleStickChart from "lib/charts/CandleStickChart";
 import CandleStickStockScaleChart from "lib/charts/CandleStickStockScaleChart";
 
-var CandleStickChartPage = React.createClass({
+var CandleStickChartPage = createReactClass({
 	statics: {
 		title: 'Candlestick Chart'
 	},

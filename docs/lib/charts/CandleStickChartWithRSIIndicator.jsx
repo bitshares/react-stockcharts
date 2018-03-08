@@ -1,6 +1,7 @@
 "use strict";
 
 import React from "react";
+import PropTypes from "prop-types";
 import { format } from "d3-format";
 import { timeFormat } from "d3-time-format";
 
@@ -83,7 +84,7 @@ class CandleStickChartWithRSIIndicator extends React.Component {
 					<MovingAverageTooltip onClick={(e) => console.log(e)} origin={[-38, 15]}
 						calculators={[ema26, ema12]}/>
 				</Chart>
-				<Chart id={2} height={150} 
+				<Chart id={2} height={150}
 						yExtents={[d => d.volume, smaVolume50.accessor()]}
 						origin={(w, h) => [0, h - 400]}>
 					<YAxis axisAt="left" orient="left" ticks={5} tickFormat={format(".0s")}/>
@@ -96,7 +97,7 @@ class CandleStickChartWithRSIIndicator extends React.Component {
 					<BarSeries yAccessor={d => d.volume} fill={d => d.close > d.open ? "#6BA583" : "#FF0000"} />
 					<AreaSeries yAccessor={smaVolume50.accessor()} stroke={smaVolume50.stroke()} fill={smaVolume50.fill()}/>
 				</Chart>
-				<Chart id={3} 
+				<Chart id={3}
 						yExtents={rsiCalculator.domain()}
 						height={125} origin={(w, h) => [0, h - 250]} >
 					<XAxis axisAt="bottom" orient="bottom" showTicks={false} outerTickSize={0} />
@@ -142,10 +143,10 @@ class CandleStickChartWithRSIIndicator extends React.Component {
 
 
 CandleStickChartWithRSIIndicator.propTypes = {
-	data: React.PropTypes.array.isRequired,
-	width: React.PropTypes.number.isRequired,
-	ratio: React.PropTypes.number.isRequired,
-	type: React.PropTypes.oneOf(["svg", "hybrid"]).isRequired,
+	data: PropTypes.array.isRequired,
+	width: PropTypes.number.isRequired,
+	ratio: PropTypes.number.isRequired,
+	type: PropTypes.oneOf(["svg", "hybrid"]).isRequired,
 };
 
 CandleStickChartWithRSIIndicator.defaultProps = {

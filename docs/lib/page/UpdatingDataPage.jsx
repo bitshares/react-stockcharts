@@ -15,7 +15,7 @@ import RenkoWithUpdatingData from "lib/charts/RenkoWithUpdatingData";
 var { TypeChooser } = helper;
 
 
-var UpdatingDataPage = React.createClass({
+var UpdatingDataPage = createReactClass({
 	statics: {
 		title: 'Updating Data'
 	},

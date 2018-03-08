@@ -4,10 +4,11 @@ import React from "react";
 import ContentSection from "lib/content-section";
 import Row from "lib/row";
 import Section from "lib/section";
+import createReactClass from "create-react-class";
 
 import CandleStickChartWithCHMousePointer from "lib/charts/CandleStickChartWithCHMousePointer";
 
-var MousePointerPage = React.createClass({
+var MousePointerPage = createReactClass({
 	statics: {
 		title: 'Mouse pointer'
 	},

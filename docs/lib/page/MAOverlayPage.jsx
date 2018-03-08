@@ -6,12 +6,13 @@ import { helper } from "react-stockcharts";
 import ContentSection from "lib/content-section";
 import Row from "lib/row";
 import Section from "lib/section";
+import createReactClass from "create-react-class";
 
 import CandleStickChartWithMA from "lib/charts/CandleStickChartWithMA";
 
 var { TypeChooser } = helper;
 
-var MAOverlayPage = React.createClass({
+var MAOverlayPage = createReactClass({
 	statics: {
 		title: 'Moving Average'
 	},

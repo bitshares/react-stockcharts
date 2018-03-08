@@ -6,12 +6,13 @@ import { helper } from "react-stockcharts";
 import ContentSection from "lib/content-section";
 import Row from "lib/row";
 import Section from "lib/section";
+import createReactClass from "create-react-class";
 
 import OHLCChartWithElderRayIndicator from "lib/charts/OHLCChartWithElderRayIndicator";
 
 var { TypeChooser } = helper;
 
-var ElderRayIndicatorPage = React.createClass({
+var ElderRayIndicatorPage = createReactClass({
 	statics: {
 		title: "ElderRay"
 	},

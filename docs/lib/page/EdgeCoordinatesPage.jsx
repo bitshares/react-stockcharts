@@ -6,11 +6,12 @@ import { helper } from "react-stockcharts";
 import ContentSection from "lib/content-section";
 import Row from "lib/row";
 import Section from "lib/section";
+import createReactClass from "create-react-class";
 
 import CandleStickChartWithEdge from "lib/charts/CandleStickChartWithEdge";
 var { TypeChooser } = helper;
 
-var EdgeCoordinatesPage = React.createClass({
+var EdgeCoordinatesPage = createReactClass({
 	statics: {
 		title: 'Edge coordinate'
 	},

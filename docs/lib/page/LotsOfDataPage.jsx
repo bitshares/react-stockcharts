@@ -2,7 +2,7 @@
 
 import React from "react";
 import { helper } from "react-stockcharts";
-
+import createReactClass from "create-react-class";
 import ContentSection from "lib/content-section";
 import Row from "lib/row";
 import Section from "lib/section";
@@ -11,7 +11,7 @@ import CandleStickChartWithEdge from "lib/charts/CandleStickChartWithEdge";
 
 var { TypeChooser } = helper;
 
-var LotsOfDataPage = React.createClass({
+var LotsOfDataPage = createReactClass({
 	statics: {
 		title: 'Lots of data'
 	},
